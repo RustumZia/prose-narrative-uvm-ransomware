@@ -6,6 +6,7 @@ body {
     line-height: 24px;
     width: auto;
     margin: 0px;
+    position: fixed;
 }
 
 .gradient-bg {
@@ -47,10 +48,16 @@ body {
     top: 0;
     right: 0;
     width: 350px;
+    height: 100%;
+    text-align: left;
 }
 
 #white-sidebar * {
-    position: absolute;
+    position: relative;
+}
+
+.image-caption {
+    font-size: 12px;
 }
 
 .parag {
