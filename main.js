@@ -19,7 +19,7 @@ window.onscroll = (e) => {
     
     if (window.scrollY > window.innerHeight / 4) {
         video.pause()
-    } else {
+    } else if (video.paused) {
         video.play()
     }
 }
