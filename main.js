@@ -36,6 +36,6 @@ for (let i = 0; i < stickers.length; ++i) {
         continue;
     }
 
-    elem.style.top = (elem.getBoundingClientRect().top + window.pageYOffset) + "px";
+    elem.style.top = (other.getBoundingClientRect().top + window.pageYOffset) + "px";
     console.log(elem.style.top, other.offsetTop);
 }
