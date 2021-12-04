@@ -11,7 +11,7 @@ body {
 .gradient-bg {
     background-image: linear-gradient(black, white);
     position: static;
-    width: auto;
+    width: 100%;
     height: 200px;
 }
 
