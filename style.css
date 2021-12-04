@@ -27,7 +27,7 @@ body {
     padding: 30px 15px 100px 10px;
     text-align: center;
     width: auto;
-    min-width: fit-content;
+    min-width: 1024px;
 }
 
 #white-bg-content-wrapper {
