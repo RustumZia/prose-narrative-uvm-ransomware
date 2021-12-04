@@ -8,7 +8,7 @@ body {
     margin: 0px;
 }
 
-.gradient-bg {
+#gradient-bg {
     background-image: linear-gradient(black, white);
     position: static;
     width: 100%;
