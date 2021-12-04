@@ -39,6 +39,3 @@ for (let i = 0; i < stickers.length; ++i) {
     elem.style.top = (other.getBoundingClientRect().top + window.pageYOffset) + "px";
     console.log(elem.style.top, other.offsetTop);
 }
-
-gradient = document.getElementById("gradient-bg");
-gradient.style.width = 100 / window.visualViewport.scale + "%";
