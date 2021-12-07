@@ -69,6 +69,11 @@ body {
     margin-block-end: 1em;
 }
 
+.cite { 
+    max-width: 600px;
+    margin-top: -10px;
+}
+
 #header-video {
     min-width: 100%;
     opacity: 0.7;
@@ -131,4 +136,9 @@ p {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#input-example {
+    background-color: whitesmoke;
+    border-width: 2px;
 }
