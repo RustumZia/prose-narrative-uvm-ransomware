@@ -76,7 +76,13 @@ document.addEventListener("scroll", () => {
     }
     eraseClass("outline-focused");
     focusedHeader.classList.add("outline-focused");
-    focusedHeader.scrollIntoView({block: "center", inline: "nearest", behavior: "smooth"})
+    // focusedHeader.scrollIntoView({block: "center", inline: "nearest", behavior: "smooth"})
+    // for some reason scrollIntoView doesn't recognize sticky scroll parenth when block: "center"
+
+    outline.scrollTo({
+        behavior: "smooth", 
+        top: focusedHeader.offsetTop + focusedHeader.clientHeight / 2 - outline.clientHeight / 2,
+    })
 })
 
 document.dispatchEvent(new Event("scroll"));
@@ -104,7 +110,7 @@ function inTopHalfOfScreen(y) {
 /****************************************************/
 
 window.onhashchange = function() {
-    
+
 }
 
 /****************************************************/
