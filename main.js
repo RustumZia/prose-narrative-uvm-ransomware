@@ -43,20 +43,69 @@ for (let i = 0; i < stickers.length; ++i) {
 
 /****************************************************/
 
-const sectionHeaders = document.getElementsByClassName("section-head");
+const sectionHeaders = document.querySelectorAll(".outline, .section-head");
 const outline = document.getElementById("outline");
+
+let focusedHeader = null;
+
 for (let i = 0; i < sectionHeaders.length; ++i) {
     const headerElem = sectionHeaders[i];
     
     const link = document.createElement("a");
-    headerElem.id ||= headerElem.innerText.replace(" ", "-").toLowerCase();
+    headerElem.id ||= headerElem.innerText.replaceAll(/\s/g, "-").replaceAll(/[,.]/g, "").toLowerCase();
+
     link.href = "#" + headerElem.id;
-    link.innerText = headerElem.innerText;
+    link.innerText = headerElem.getAttribute("outlinetitle") || headerElem.innerText;
 
     outline.appendChild(link);
-    
+
+    document.addEventListener("scroll", () => {
+        if (headerElem !== focusedHeader && headerInFocus(headerElem, focusedHeader)) {
+            focusedHeader = link;
+        }
+    });
 }
 
+document.addEventListener("scroll", () => {
+    if (focusedHeader === null) {
+        outline.scrollTo(0, 0);
+        return;
+    }
+    if (focusedHeader.href != window.location.href) {
+        history.replaceState(undefined, undefined, focusedHeader.href);
+    }
+    eraseClass("outline-focused");
+    focusedHeader.classList.add("outline-focused");
+    focusedHeader.scrollIntoView({block: "center", inline: "nearest", behavior: "smooth"})
+})
+
+document.dispatchEvent(new Event("scroll"));
+
+function eraseClass(className) {
+    const elements = document.getElementsByClassName(className);
+    for (let i = 0; i < elements.length; ++i) {
+        const elem = elements[i];
+        elem.classList.remove("outline-focused")
+    }
+}
+
+function headerInFocus(header, currentFocus) {
+    const headerBottom = header.getBoundingClientRect().bottom;
+    const currentBottom = currentFocus?.getBoundingClientRect()?.bottom ?? -1;
+    
+    return inTopHalfOfScreen(headerBottom) && (currentBottom < 0 || headerBottom < currentBottom)
+}
+
+function inTopHalfOfScreen(y) {
+    return y > 0 && y < window.innerHeight / 2
+}
+
+
+/****************************************************/
+
+window.onhashchange = function() {
+    
+}
 
 /****************************************************/
 
