@@ -115,7 +115,7 @@
             Katie Crumley, a Hall County spokesperson.
           </p>
           <div class="image-wrap">
-            <img src="https://www.hallcounty.org/ImageRepository/Document?documentID=5369" alt="Hall County Courthouse"
+            <img src="data/hall-county.jpeg" alt="Hall County Courthouse"
               width="600px" style="margin-top: 20px; margin-bottom: 20px;">
             <p class="image-caption">
               Hall County Courthouse
@@ -218,9 +218,9 @@
           <p class="parag">
             As you can see, all this does is display back it's input;
             a very common thing in web pages.
-            But what it does is the input and inserting it into the
-            HTML, or HyperText Markup Language of the web page. Try pasting in the following. <br>
-            <code>&lt;b&gt;Hello&lt;/b&gt; there.</code>
+            But this is done by inserting the input into the
+            HTML, or HyperText Markup Language, of the web page. Try pasting in the following. <br>
+            <code>This is &lt;b&gt;bold&lt;/b&gt;</code>
           </p>
           <p class="parag">
             Notice the bold text in the result. Not just text is inserted,
@@ -238,18 +238,22 @@
           <p class="parag">
             Putting this into the text box won't do anything because the latest version
             of HTML specifically ignores &lt;script&gt; tags inserted in this way, but
-            it is not effective because there are numerous other ways to inject Javascript
-            into HTML. <br>
+            it is not effective to prevent Javascript injections because there are numerous other ways
+            to insert Javascript into HTML. <br>
             <code>&lt;img src="x" onerror="alert('oops')"&gt;</code>
           </p>
           <p class="parag">
             On this page there is no security concern because there is no backend server
             behind this page.
-            But, websites commonly store input data or display it to other users, in which
+            But, websites commonly store input data and display it to other users, in which
             case it would be executed for all of those users. Think forums and media.
-            A very common situation is the input is encoded as URL parameters so that the
+            Another very common situation is the input is encoded as URL parameters so that the
             server can read it.
-            This allows the creation of a malicuous link to a legitimate website.
+            This allows the creation of a malicious link to a legitimate website.
+          </p>
+          <p class="parag">
+            Finally, the injection can have access to any cookies, session tokens, 
+            or other sensitive site-specific information according to Mozilla.
           </p>
           <p class="parag">
             All it takes to prevent this vulnerability is to have all angle brackets be replaced
@@ -261,15 +265,19 @@
             The perpetrators of the ransomware attack on the UVM Medical Center were found to be a powerful,
             Russian-speaking cybercriminal group known to be behind a malware tool called TrickBot. TrickBot is a vast
             network of infected computers controlled by constantly changing internet servers to perform their own
-            cyberattacks and expand the untraceable network. This is known as a botnet. According to Microsoft, “The
-            botnet's operators have all the IT support of legitimate enterprises — continuity planning, backups,
-            automated
-            deployment, and a dedicated workforce — that allow them to quickly react to disruptive measures.” According
-            to
-            the U.S. Cybersecurity and Infrastructure Security Agency, “TrickBot now provides its operators a full suite
-            of tools to conduct a myriad of illegal cyber activities. These activities include credential harvesting,
-            mail
-            exfiltration, cryptomining, point-of-sale data exfiltration, and the deployment of ransomware, such as Ryuk
+            cyberattacks and expand the untraceable network. This is known as a botnet.
+          </p>
+          <p class="parag">
+            According to Microsoft, 
+            “The botnet's operators have all the IT support of legitimate enterprises — 
+            continuity planning, backups, automated deployment, and a dedicated workforce — 
+            that allow them to quickly react to disruptive measures.” 
+          </p>
+          <p class="parag">
+            According to the U.S. Cybersecurity and Infrastructure Security Agency, 
+            “TrickBot now provides its operators a full suite of tools to conduct a myriad of 
+            illegal cyber activities. These activities include credential harvesting, mail exfiltration,
+            cryptomining, point-of-sale data exfiltration, and the deployment of ransomware, such as Ryuk
             and Conti.”
           </p>
           <p class="parag">
@@ -347,11 +355,21 @@
           </p>
           <h3 class="section-head">Consequence</h3>
           <p class="parag">
+            The cyberattack had huge financial costs for the medical center, mostly in lost revenue.
+          </p>
+          <p class="parag">
             "All of our financial systems were down as well. We truly were on paper. Our CFO at the medical center,
             literally on the back of an envelope, thinks our revenue was down about 1.5 to 1.6 million dollars a
             day in services that we couldn't do. And we actually haven't calculated the cost of bringing the system up
             yet or all the cost of extra people here if there were patients because we just did what had to be done,"
-            Leffler explains.
+            Leffler explained.
+          </p>
+          <p class="parag">
+            But that wasn't it. Treatment of patients was hugely hindered.
+          </p>
+          <p class="parag">
+            In the interim, clinicians were forced to send away hundreds of cancer patients, 
+            said Olivia Thompson, a nurse at the cancer center, to NY Times.
           </p>
           <h3 class="section-head">Future</h3>
           <p class="parag">
@@ -483,6 +501,11 @@
             <a href="https://www.hhs.gov/sites/default/files/2020-hph-cybersecurty-retrospective-tlpwhite.pdf"
               target="_blank"
               rel="noopener noreferrer">https://www.hhs.gov/sites/default/files/2020-hph-cybersecurty-retrospective-tlpwhite.pdf</a>
+          </p>
+          <p class="parag">
+            <a href="https://www.coveware.com/blog/ransomware-marketplace-report-q4-2020" target="_blank" rel="noopener noreferrer">
+              https://www.coveware.com/blog/ransomware-marketplace-report-q4-2020
+            </a>
           </p>
         </div>
       </div>

@@ -80,7 +80,7 @@ document.addEventListener("scroll", () => {
     // for some reason scrollIntoView doesn't recognize sticky scroll parenth when block: "center"
 
     outline.scrollTo({
-        behavior: "smooth", 
+        behavior: "auto", 
         top: focusedHeader.offsetTop + focusedHeader.clientHeight / 2 - outline.clientHeight / 2,
     })
 })
