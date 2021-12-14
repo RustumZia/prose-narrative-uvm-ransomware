@@ -53,8 +53,9 @@
               src="https://d2ubrtwy6ww54e.cloudfront.net/www.uvmhealth.org/assets/styles/provider/s3/provider_images/Stephen-M-Leffler-MD-635621857987047649_jpg.jpg?VersionId=weQjGbaEeCcpv1FoPEiSbZKV0IT.f518&h=e2782a98&itok=Mu4CMudt"
               alt="Stephen Leffler Portrait" style="width: 120px; margin-left: auto; margin-right: auto;">
             <div class="image-caption">
-              <a href="https://www.uvmhealth.org/medcenter/provider/stephen-m-leffler-md" target="_blank">Stephen M.
-                Leffler, MD</a><br>
+              <a href="https://www.uvmhealth.org/medcenter/provider/stephen-m-leffler-md" target="_blank">
+                Stephen M. Leffler, MD
+              </a><br>
               Emergency Medicine Physician,
               President,
               and Chief Operating Officer
@@ -89,9 +90,12 @@
           <p class="parag">
             They will soon find the flipside of their interconnected system to hit hard.
           </p>
-          <div style="display: block; margin-bottom: 20px; width: max-content">
+          <div class="image-wrap">
             <img src="https://www.huduser.gov/portal/sites/default/files/images/CS_large-1-081718.jpg"
               alt="University of Vermont Medical Center" width="600px" style="margin-top: 20px; margin-bottom: 15px;">
+            <p class="image-caption">
+              The University of Vermont Medical Center
+            </p>
           </div>
 
           <h3 class="section-head">A Haunting Fear</h3>
@@ -110,9 +114,12 @@
             the voter signature database, as well as a voting precinct map hosted on the county's website, according to
             Katie Crumley, a Hall County spokesperson.
           </p>
-          <div style="display: block; margin-bottom: 20px; width: max-content">
+          <div class="image-wrap">
             <img src="https://www.hallcounty.org/ImageRepository/Document?documentID=5369" alt="Hall County Courthouse"
               width="600px" style="margin-top: 20px; margin-bottom: 20px;">
+            <p class="image-caption">
+              Hall County Courthouse
+            </p>
           </div>
 
           <p class="parag">
@@ -127,12 +134,12 @@
           <h3 class="section-head">October 28, 2020</h3>
 
           <p class="parag">
-            With the incoming reports the IT department of UVM Medical Center suspected that their systems had been
+            With the incoming reports the IT department of the medical center suspected that their systems had been
             infected with malware. They took no chances; taking down internet access, employee email, and the electronic
             health record system.
           </p>
           <p class="parag">
-            This may have saved the medical center from an irrecoverable predicament, but the fast
+            This may have saved them from an irrecoverable predicament, but the fast
             action was not nearly as fast as the near-instantaneous spreading of malware across their computer systems.
           </p>
           <p class="parag">
@@ -143,7 +150,7 @@
           </p>
 
           </p>
-          <div style="display: block; margin-bottom: 20px; width: max-content">
+          <div class="image-div">
             <img
               src="https://www.gannett-cdn.com/presto/2020/11/23/PBUR/df7f82eb-c439-487e-8f60-103c7f2f54df-UVMMC_VT_CYBERATTACK6.jpg?width=660&height=441&fit=crop&format=pjpg&auto=webp"
               alt="IT Staff at UVM Medical Center" width="600px" style="margin-top: 20px; margin-bottom: 10px;">
@@ -183,7 +190,7 @@
             <img src="data/ransomware-vs-healthcare.png" alt="Ransomware in Healthcare 2020 Statistics" width="600px"
               style="margin-top: 20px; margin-bottom: 10px;">
             <p class="image-caption">
-              statistics by United States Department of Health and Human Resources
+              statistics by United States Department of Health and Human Services
             </p>
           </div>
 
@@ -199,6 +206,55 @@
           <h3 class="section-head">Rise of Malware</h3>
           <p class="parag">
             Cyberattacks, malware, and ransomware are on a rise throughout the US and the world.
+          </p>
+          <p class="parag">
+            Vulnerabilities in programs simply occur too easily.
+            Try typing something into the following input field.
+          </p>
+          <p class="parag">
+            <input type="text" id="input-example">
+          <div id="output-example"></div>
+          </p>
+          <p class="parag">
+            As you can see, all this does is display back it's input;
+            a very common thing in web pages.
+            But what it does is the input and inserting it into the
+            HTML, or HyperText Markup Language of the web page. Try pasting in the following. <br>
+            <code>&lt;b&gt;Hello&lt;/b&gt; there.</code>
+          </p>
+          <p class="parag">
+            Notice the bold text in the result. Not just text is inserted,
+            but an actual markup language.
+            To allow raw text to be inserted, websites must first replace these special
+            characters like `&lt;` and `&gt;` with their respective HTML escape sequences `&amp;lt;`
+            and `&amp;gt;`.
+          </p>
+          <p class="parag">
+            In the modern web there is Javascript, a fully fledged programming language,
+            which is used to make websites dynamic and capable.
+            Javascript can be run in the browser by putting it between special "script" tags like so:<br>
+            <code>&lt;script&gt;alert()&lt;/script&gt;</code>
+          </p>
+          <p class="parag">
+            Putting this into the text box won't do anything because the latest version
+            of HTML specifically ignores &lt;script&gt; tags inserted in this way, but
+            it is not effective because there are numerous other ways to inject Javascript
+            into HTML. <br>
+            <code>&lt;img src="x" onerror="alert('oops')"&gt;</code>
+          </p>
+          <p class="parag">
+            On this page there is no security concern because there is no backend server
+            behind this page.
+            But, websites commonly store input data or display it to other users, in which
+            case it would be executed for all of those users. Think forums and media.
+            A very common situation is the input is encoded as URL parameters so that the
+            server can read it.
+            This allows the creation of a malicuous link to a legitimate website.
+          </p>
+          <p class="parag">
+            All it takes to prevent this vulnerability is to have all angle brackets be replaced
+            by their escaped counterparts, but you only need forget once. And then there's all the
+            other vulnerabilities to worry about.
           </p>
           <h3 class="section-head">TrickBot and Botnets</h3>
           <p class="parag">
@@ -294,9 +350,8 @@
             "All of our financial systems were down as well. We truly were on paper. Our CFO at the medical center,
             literally on the back of an envelope, thinks our revenue was down about 1.5 to 1.6 million dollars a
             day in services that we couldn't do. And we actually haven't calculated the cost of bringing the system up
-            yet or all the cost of extra people here if there were patients because we just did what had to be done",
-            Leffler
-            explains.
+            yet or all the cost of extra people here if there were patients because we just did what had to be done,"
+            Leffler explains.
           </p>
           <h3 class="section-head">Future</h3>
           <p class="parag">
@@ -317,13 +372,15 @@
             But is it ever enough? How excessive must these precautions eventually go? And how do we know what’s
             necessary?
           </p>
-          <h3 class="section-head" style="margin-top: 200px;">Sources</h3>
+          <h3 class="section-head" style="margin-top: 200px;">Works Cited</h3>
           <p class="parag" style="line-height: normal;">
             Barry, Ellen, and Nicole Perlroth. "Patients of a Vermont Hospital Are Left 'in
           <blockquote class="cite">
             <p>the Dark' after a Cyberattack." The New York Times [New York City], 14 Dec.
-              2020. https://www.nytimes.com/, www.nytimes.com/2020/11/26/us/
-              hospital-cyber-attack.html. Accessed 21 Oct. 2021.
+              2020. https://www.nytimes.com/,
+              <a target="_blank"
+                href="http://www.nytimes.com/2020/11/26/us/hospital-cyber-attack.html">www.nytimes.com/2020/11/26/us/hospital-cyber-attack.html</a>.
+              Accessed 21 Oct. 2021.
           </blockquote>
           </p>
           <p class="parag">
@@ -352,9 +409,8 @@
           <p class="parag" style="line-height: normal;">
             Benninghoff, Grace. "Malware on Employee's Company Computer Led to Cyber Attack
           <blockquote class="cite">
-            <p> on UVM Medical Center." VTDigger, 21 July 2021. VTDigger, vtdigger.org/2021/
-              07/21/
-              malware-on-employees-company-computer-led-to-cyber-attack-on-uvm-medical-center/.
+            <p> on UVM Medical Center." VTDigger, 21 July 2021. VTDigger, <a target="_blank"
+                href="http://www.vtdigger.org/2021/07/21/malware-on-employees-company-computer-led-to-cyber-attack-on-uvm-medical-center/">www.vtdigger.org/2021/07/21/malware-on-employees-company-computer-led-to-cyber-attack-on-uvm-medical-center/</a>.
               Accessed 21 Oct. 2021.
             </p>
           </blockquote>
@@ -385,8 +441,9 @@
           <blockquote class="cite">
             <p>
               Businesses and Organizations. Issue brief no. I-100219-PSA, Internet Crime
-              Complain Center, 2 Oct. 2019. Internet Crime Complain Center, www.ic3.gov/
-              Media/Y2019/PSA191002. Accessed 6 Dec. 2021.
+              Complain Center, 2 Oct. 2019. Internet Crime Complain Center, <a target="_blank"
+                href="http://www.ic3.gov/Media/Y2019/PSA191002">www.ic3.gov/Media/Y2019/PSA191002</a>.
+              Accessed 6 Dec. 2021.
             </p>
           </blockquote>
           </p>
@@ -403,7 +460,29 @@
             https://us-cert.cisa.gov/ncas/alerts/aa20-302a<br>
 
             https://blogs.microsoft.com/on-the-issues/2020/10/12/trickbot-ransomware-cyberthreat-us-elections/<br>
+            https://www.hhs.gov/sites/default/files/2020-hph-cybersecurty-retrospective-tlpwhite.pdf<br>
 
+          </p>
+
+          <h4 style="margin-left: auto; max-width: 700px; margin-right: auto;">
+            Images
+          </h4>
+          <p class="parag">
+            <a target="_blank"
+              href="https://www.uvmhealth.org/medcenter/provider/stephen-m-leffler-md">https://www.uvmhealth.org/medcenter/provider/stephen-m-leffler-md</a>
+          </p>
+          <p class="parag">
+            <a target="_blank"
+              href="https://www.huduser.gov/portal/casestudies/study-081718.html">https://www.huduser.gov/portal/casestudies/study-081718.html</a>
+          </p>
+          <p class="parag">
+            <a target="_blank"
+              href="https://www.hallcounty.org/470/Juvenile-Court">https://www.hallcounty.org/470/Juvenile-Court</a>
+          </p>
+          <p class="parag">
+            <a href="https://www.hhs.gov/sites/default/files/2020-hph-cybersecurty-retrospective-tlpwhite.pdf"
+              target="_blank"
+              rel="noopener noreferrer">https://www.hhs.gov/sites/default/files/2020-hph-cybersecurty-retrospective-tlpwhite.pdf</a>
           </p>
         </div>
       </div>

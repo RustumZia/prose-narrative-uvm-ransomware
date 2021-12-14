@@ -109,9 +109,10 @@ function inTopHalfOfScreen(y) {
 
 /****************************************************/
 
-window.onhashchange = function() {
-
+const input = document.getElementById("input-example");
+const output = document.getElementById("output-example");
+input.oninput = function () {
+    output.innerHTML = input.value;
 }
-
 /****************************************************/
 

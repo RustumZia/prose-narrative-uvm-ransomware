@@ -62,11 +62,14 @@ body {
 }
 
 .parag {
-    margin-left: auto;
-    margin-right: 400px;
-    max-width: 600px;
     margin-block-start: 1em;
     margin-block-end: 1em;
+}
+
+.parag, .block {
+    margin-left: auto;
+    margin-right: 400px;
+    max-width: 600px;    
 }
 
 .cite { 
@@ -187,3 +190,9 @@ p {
     color: rgb(255, 246, 234) !important;
 }
 
+.image-wrap {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    width: max-content;
+}
