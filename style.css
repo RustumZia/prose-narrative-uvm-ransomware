@@ -66,10 +66,19 @@ body {
     margin-block-end: 1em;
 }
 
-.parag, .block {
+.parag, .cite-start, .cite-block {
     margin-left: auto;
     margin-right: 400px;
     max-width: 600px;    
+}
+
+.cite-start {
+    margin-top: 40px;
+    line-height: normal;
+}
+
+.cite-block {
+    margin-left: 4em;
 }
 
 .cite { 
